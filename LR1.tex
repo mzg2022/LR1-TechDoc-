@@ -1,0 +1,106 @@
+\documentclass[14pt]{extreport}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{graphicx}
+\setmainlanguage{russian}
+\setotherlanguages{english}
+\setmainfont{Times New Roman}
+
+% Настройка шрифтов с локальными шрифтами 
+% \setmainfont[
+% Path=./fonts/,
+% Extension=.ttf,
+% Ligatures=TeX,
+% UprightFont={*-Regular},
+% BoldFont={*-Bold},
+% ItalicFont={*-Italic},
+% BoldItalicFont={*-BoldItalic}
+% ]{BookmanOldStyle}
+
+
+\usepackage[a4paper,left=30mm,right=10mm,top=20mm,bottom=20mm]{geometry}
+\setlength{\parindent}{1.25cm}
+\usepackage{indentfirst}
+\setlength{\parskip}{0pt}
+\linespread{1.5}
+
+% Нумерация страниц внизу в центре, исключая титульную страницу
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\fancypagestyle{plain}{%
+	\fancyhf{}
+	\fancyfoot[C]{\thepage}
+}
+
+\title{Реферат на тему: \\[0.5cm] \textbf{Название вашей темы}}
+\author{Студент: Зубов Михаил Геннадьевич \\ Группа: ИВТ 1-1}
+\date{\today}
+
+\begin{document}
+	
+	\maketitle
+	\tableofcontents
+	
+	\chapter{Введение}
+	Здесь начинается текст введения.
+	
+	\chapter{Основная часть - 1}
+	\section{Раздел 1.1}
+	Текст первого раздела.
+	
+	\subsection{Подраздел 1.1.1}
+	Текст первого подраздела.
+	
+	\subsection{Подраздел 1.1.2}
+	Текст второго подраздела.
+	
+	\subsubsection{Подподраздел 1.1.2.1}
+	Текст второго подраздела.
+	
+	\section{Раздел 2}
+	Текст второго раздела.
+	
+	\chapter{Заключение}
+	Здесь подводятся итоги.
+	
+	% Пример жирного, курсивного и подчёркнутого текста
+	\textbf{Жирный текст} может быть полезен для выделения важных терминов. 
+	\textit{Курсивный текст} используется для выделения цитат или названий. 
+	\underline{Подчёркнутый текст} применяют реже, но он тоже доступен.
+	
+	\section{Список литературы}
+	\begin{enumerate}
+		\item Автор1. Название книги. Издательство, год.
+		\item Автор2. Название статьи. Журнал, год.
+	\end{enumerate}
+	
+	% Вставка изображения
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.5\textwidth]{C:/Users/skynet/Desktop/2.jpg}
+		\caption{Описание изображения}
+		\label{fig:example}
+	\end{figure}
+	
+	% Пример таблицы
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{|c|c|c|}
+			\hline
+			Столбец 1 & Столбец 2 & Столбец 3 \\
+			\hline
+			Данные 1 & Данные 2 & Данные 3 \\
+			\hline
+		\end{tabular}
+		\caption{Пример таблицы}
+		\label{tab:example}
+	\end{table}
+	
+	% Пример формулы
+	\begin{equation}
+		E = mc^2
+	\end{equation}
+	
+\end{document}
